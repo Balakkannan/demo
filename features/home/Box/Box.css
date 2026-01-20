@@ -1,0 +1,444 @@
+
+.smooth-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.smooth-content {
+  min-height: 100vh;
+}
+.animationgsap {
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.animationlogo{
+        animation: boxname 2s ease-in forwards ;
+       
+}
+@keyframes boxname {
+            from{
+                width: 0px;
+                transform: translateX(-50px);
+                opacity: 0.5;
+            }
+            to{
+                width: 200px;
+                transform: translateX(-38px);
+                opacity: 1;
+            }
+
+}
+
+
+/* line and arrow code */
+ .line-container,.line-container_3,.line-container_6 {
+          position: absolute;
+          width: 146px;
+          height: 20px; 
+          top: 90px;
+          display: flex;
+          align-items: center;
+        }
+        .line-container_3{
+            left: 134px;
+            top:26px;
+            width: 280px;
+        }
+        .line-container_6{
+            width: 270px;
+               left: 140px;
+            
+        } 
+        .line-container_1,.line-container_2,.line-container_4,.line-container_5,.line-container_7,.line-container_9{
+          position: absolute;
+          width: 88px;
+          height: 20px; 
+          top: 40px;
+          left: 102.5px;
+          display: flex;
+          align-items: center;
+          transform: rotateZ(270deg);
+        }
+        .line-container_1{
+          width: 120px;
+           left: 90px;
+            top: 32px;
+        }
+        .line-container_2{
+            top: 60px;
+            width: 60px;
+        }
+        .line-container_7{
+              transition: transform 20s ease;
+            transform: rotateZ(270deg);
+            left: 66.5%;
+          width: 98px;
+
+            top: 30px;
+        }
+        .line-container_4{
+          width: 80px;
+            transition: transfrom 20s ease;
+            transform: rotateZ(90deg);
+            left: 85%;
+            top: 50px;
+        }
+        .line-container_5{
+            top: 54px;
+          width: 76px;
+          left: 17%;
+              transition: transfrom 20s ease;
+            transform: rotateZ(90deg);
+        }
+          .line-container_9{
+            top: 30px;
+          width: 46px;
+          left: 20%;
+              transition: transform 20s ease;
+            transform: rotateZ(90deg);
+        }
+        .dotted-line {
+          height: 4px;
+          width: 0; /* start from 0 */
+          background-image: repeating-linear-gradient(
+            to right,
+            white 0px,
+            white 6px,
+            transparent 4px,
+            transparent 12px
+          );
+        }
+          .dotted-line1 {
+          height: 4px;
+          width: 0px; /* start from 0 */
+          background-image: repeating-linear-gradient(
+            to right,
+            white 0px,
+            white 6px,
+            transparent 4px,
+            transparent 12px
+          );
+          transform: rotateZ(180deg);
+        }
+
+        .arrow {
+          position: relative;
+          right: 0;
+          width: 0;
+          height: 0;
+          top: 0;
+          border-left: 15px solid white;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          opacity: 0; 
+        }
+
+/* ================================================ */
+/* MEDIA QUERIES - RESPONSIVE BREAKPOINTS */
+/* ================================================ */
+
+/* MOBILE DEVICES (320px - 640px) */
+/* @media (max-width: 640px) {
+  .line-container,
+  .line-container_3,
+  .line-container_6 {
+    width: 80px;
+    height: 15px;
+    top: 60px;
+  }
+
+  .line-container_3 {
+    left: 80px;
+    top: 20px;
+    width: 150px;
+  }
+
+  .line-container_6 {
+    width: 140px;
+    left: 80px;
+  }
+
+  .line-container_1,
+  .line-container_2,
+  .line-container_4,
+  .line-container_5,
+  .line-container_7,
+  .line-container_9 {
+    width: 50px;
+    height: 15px;
+    top: 30px;
+    left: 60px;
+  }
+
+  .line-container_1 {
+    width: 70px;
+    left: 50px;
+    top: 25px;
+  }
+
+  .line-container_2 {
+    top: 40px;
+    width: 40px;
+  }
+
+  .line-container_7 {
+    left: 50%;
+    width: 60px;
+    top: 20px;
+  }
+
+  .line-container_4 {
+    width: 50px;
+    left: 70%;
+    top: 35px;
+  }
+
+  .line-container_5 {
+    top: 35px;
+    width: 50px;
+    left: 15%;
+  }
+
+  .line-container_9 {
+    top: 80px;
+    width: 80px;
+    left: 15%;
+  }
+
+  .dotted-line {
+    height: 2px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 4px,
+      transparent 2px,
+      transparent 8px
+    );
+  }
+
+  .dotted-line1 {
+    height: 2px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 4px,
+      transparent 2px,
+      transparent 8px
+    );
+  }
+
+  .arrow {
+    border-left: 10px solid white;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+} */
+
+/* TABLET DEVICES (641px - 1024px) */
+/* @media (min-width: 641px) and (max-width: 1024px) {
+  .line-container,
+  .line-container_3,
+  .line-container_6 {
+    width: 110px;
+    height: 18px;
+    top: 75px;
+  }
+
+  .line-container_3 {
+    left: 110px;
+    top: 23px;
+    width: 200px;
+  }
+
+  .line-container_6 {
+    width: 190px;
+    left: 110px;
+  }
+
+  .line-container_1,
+  .line-container_2,
+  .line-container_4,
+  .line-container_5,
+  .line-container_7,
+  .line-container_9 {
+    width: 70px;
+    height: 18px;
+    top: 35px;
+    left: 80px;
+  }
+
+  .line-container_1 {
+    width: 95px;
+    left: 70px;
+    top: 28px;
+  }
+
+  .line-container_2 {
+    top: 50px;
+    width: 55px;
+  }
+
+  .line-container_7 {
+    left: 58%;
+    width: 80px;
+    top: 25px;
+  }
+
+  .line-container_4 {
+    width: 65px;
+    left: 75%;
+    top: 40px;
+  }
+
+  .line-container_5 {
+    top: 45px;
+    width: 65px;
+    left: 16%;
+  }
+
+  .line-container_9 {
+    top: 30px;
+    width: 38px;
+    left: 17%;
+  }
+
+  .dotted-line {
+    height: 3px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 5px,
+      transparent 3px,
+      transparent 10px
+    );
+  }
+
+  .dotted-line1 {
+    height: 3px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 5px,
+      transparent 3px,
+      transparent 10px
+    );
+  }
+
+  .arrow {
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+} */
+
+/* LARGE DEVICES / DESKTOP (1025px and above) */
+/* @media (min-width: 1025px) {
+  .line-container,
+  .line-container_3,
+  .line-container_6 {
+    width: 146px;
+    height: 20px;
+    top: 90px;
+  }
+
+  .line-container_3 {
+    left: 134px;
+    top: 26px;
+    width: 280px;
+  }
+
+  .line-container_6 {
+    width: 270px;
+    left: 140px;
+  }
+
+  .line-container_1,
+  .line-container_2,
+  .line-container_4,
+  .line-container_5,
+  .line-container_7,
+  .line-container_9 {
+    width: 88px;
+    height: 20px;
+    top: 40px;
+    left: 102.5px;
+  }
+
+  .line-container_1 {
+    width: 120px;
+    left: 90px;
+    top: 32px;
+  }
+
+  .line-container_2 {
+    top: 60px;
+    width: 60px;
+  }
+
+  .line-container_7 {
+    transition: transform 20s ease;
+    transform: rotateZ(270deg);
+    left: 66.5%;
+    width: 98px;
+    top: 30px;
+  }
+
+  .line-container_4 {
+    width: 80px;
+    transition: transfrom 20s ease;
+    transform: rotateZ(90deg);
+    left: 85%;
+    top: 50px;
+  }
+
+  .line-container_5 {
+    top: 54px;
+    width: 76px;
+    left: 17%;
+    transition: transfrom 20s ease;
+    transform: rotateZ(90deg);
+  }
+
+  .line-container_9 {
+    top: 34px;
+    width: 40px;
+    left: 20%;
+    transition: transform 20s ease;
+    transform: rotateZ(90deg);
+  }
+
+  .dotted-line {
+    height: 4px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 6px,
+      transparent 4px,
+      transparent 12px
+    );
+  }
+
+  .dotted-line1 {
+    height: 4px;
+    background-image: repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 6px,
+      transparent 4px,
+      transparent 12px
+    );
+  }
+
+  .arrow {
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+} */

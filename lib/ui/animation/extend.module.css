@@ -1,0 +1,8 @@
+.card_background {
+  background-color: var(--primary-color);
+  
+}
+
+.card_size {
+  width: 24rem;
+}
