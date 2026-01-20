@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/careers/page": "/careers",
+  "/privacy-policy/page": "/privacy-policy",
+  "/t-and-c/page": "/t-and-c",
+  "/services/page": "/services",
+  "/lets-connect/page": "/lets-connect",
+  "/page": "/",
+  "/about-us/page": "/about-us",
+  "/home/page": "/home",
+  "/services/marketplace/page": "/services/marketplace",
+  "/services/digital/page": "/services/digital",
+  "/services/e-commerce/page": "/services/e-commerce",
+  "/services/media/page": "/services/media",
+  "/services/webapp/page": "/services/webapp",
+  "/services/production/page": "/services/production"
+}
